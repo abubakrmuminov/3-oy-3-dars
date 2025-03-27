@@ -1,0 +1,273 @@
+/* ===== */
+/* ROOT */
+/* ===== */
+:root {
+    /* ====== */
+    /* color */
+    /* ====== */
+    --blue: #755CDE;
+    --orange: #F6A560;
+    --pink: #F39E9E;
+    --red: #EB7565;
+    --cyan: #61C4B7;
+    --purple: #552049;
+    --black: #030303;
+    --gray: #7A746E;
+    --white: #FFF7F0;
+
+    /* ===== */
+    /* fonts */
+    /* ===== */
+    --fl: 56px;
+    --fm: 40px;
+}
+
+body {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    background-color: var(--white);
+    font-size: 18px;
+    color: var(--gray);
+}
+
+.container {
+    width: 100%;
+    max-width: 1150px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.button {
+    padding: 14px 45px;
+    border-radius: 28px;
+    display: inline-block;
+    background-color: var(--black);
+    font-weight: 700;
+    color: var(--white);
+    transition: 0.5s;
+}
+
+.button:hover {
+    background-color: var(--blue);
+}
+
+.button-red {
+    background-color: var(--red);
+}
+
+.button-red:hover {
+    background-color: var(--orange);
+}
+
+
+
+
+/* ==== */
+/* info */
+/* ==== */
+
+.info {
+    padding-top: 68px;
+    padding-bottom: 68px;
+}
+
+.info-container {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.info-content {
+    max-width: 540px;
+}
+
+.info-img {
+    width: 445px;
+    height: 445px;
+}
+
+.info-title {
+    color: var(--black);
+    font-size: var(--fm);
+    margin-bottom: 34px;
+}
+
+.info-text {
+    margin-bottom: 32px;
+}
+
+/* ========= */
+/* solutions */
+/* ========= */
+
+.solutions {
+padding-top: 40px;
+padding-bottom: 68px;
+}
+.solutions-grid {
+    display: grid;
+    gap: 24px;
+    grid-template-columns: minmax(auto, 354px) 1fr 1fr minmax(auto, 354px);
+    grid-template-rows: 182px 158px;
+}
+.solution-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    border-radius: 8px;
+    position: relative;
+    padding: 24px;
+}
+.solution-item:nth-child(1) {
+    background-color: var(--blue);  
+    grid-row: 1 / 3;
+}
+
+.solution-item:nth-child(2) {
+    background-color: var(--orange);
+}
+
+.solution-item:nth-child(3) {
+    background-color: var(--pink);
+}
+
+.solution-item:nth-child(4) {
+    background-color: var(--cyan);
+}
+
+.solution-item:nth-child(5) {
+    background-color: var(--red);
+    grid-column: 2 / 4;
+}
+
+.solution-item:nth-child(6) {
+    background-color: var(--purple);
+}
+
+.solution-item img {
+    position: absolute;
+    right: 24px;
+    top: 24px;
+}
+.solution-title {
+    color: var(--white);
+}
+
+/* === */
+/* 900 */
+/* === */
+@media (max-width: 900px) {
+    .solutions-grid {
+        grid-template-columns: minmax(auto, 333px) 1fr 1fr;
+        grid-template-rows: 182px 158px 182px;
+    }
+
+    .solution-item:nth-child(4) {
+        grid-column: 1 / 2;
+    }
+
+    .solution-item:nth-child(5) {
+        grid-row: 2 / 3;
+    }
+
+    .solution-item:nth-child(6) {
+        grid-column: 2 / 4;
+    }
+}
+
+/* === */
+/* 750 */
+/* === */
+@media (max-width: 750px) {
+    :root {
+        --fm: 32px;
+    }
+
+    .info-img {
+        width: 364px;
+        height: 364px;
+        margin-left: -40px;
+    }
+}
+
+/* === */
+/* 650 */
+/* === */
+@media (max-width: 650px) {
+    :root {
+        --fm: 26px;
+        --fl: 44px;
+    }
+
+    .info-container {
+        flex-direction: column;
+    }
+
+    .info-content {
+        text-align: center;
+    }
+
+    .info-img {
+        width: 300px;
+        height: 300px;
+        margin-left: 0px;
+    }
+}
+
+/* === */
+/* 550 */
+/* === */
+@media (max-width: 550px) {
+    .solutions-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+    }
+
+    .solution-item {
+        grid-column: 1 / 2 !important;
+    }
+
+    .solution-item:nth-child(2) {
+        grid-column: 1 / 2 !important;
+    }
+
+    .solution-item:nth-child(3) {
+        grid-column: 2 / 3 !important;
+    }
+
+    .solution-item:nth-child(4) {
+        min-height: 158px;
+    }
+
+    .solution-item:nth-child(5) {
+        grid-row: 3 / 4;
+        min-height: 158px;
+    }
+
+    .solution-item:nth-child(6) {
+        min-height: 158px;
+    }
+}
+
+/* === */
+/* 375 */
+/* === */
+@media (max-width: 375px) {
+    :root {
+        --fl: 36px
+    }
+
+    body {
+        font-size: 16px;
+    }
+}

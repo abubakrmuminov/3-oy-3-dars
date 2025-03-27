@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Portfolio" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <main>
+      <section class="solutions">
+        <div class="container solutions-container">
+          <ul class="solutions-grid">
+            <li class="solution-item">
+              <h3 class="solution-title">Graphic Design</h3>
+              <img
+                src="./images/design.svg"
+                alt="Graphic Design"
+                width="128"
+                height="192"
+              />
+            </li>
+            <li class="solution-item">
+              <h3 class="solution-title">UI/UX</h3>
+              <img src="./images/ux.svg" alt="UI/UX" width="64" height="64" />
+            </li>
+            <li class="solution-item">
+              <h3 class="solution-title">Apps</h3>
+              <img src="./images/apps.svg" alt="Apps" width="64" height="64" />
+            </li>
+            <li class="solution-item">
+              <h3 class="solution-title">Photography</h3>
+              <img
+                src="./images/photo.svg"
+                alt="Photography"
+                width="160"
+                height="64"
+              />
+            </li>
+            <li class="solution-item">
+              <h3 class="solution-title">Illustrations</h3>
+              <img
+                src="./images/illustration.svg"
+                alt="Illustrations"
+                width="128"
+                height="64"
+              />
+            </li>
+            <li class="solution-item">
+              <h3 class="solution-title">Motion Graphics</h3>
+              <img
+                src="./images/graphics.svg"
+                alt="Motion Graphics"
+                width="128"
+                height="64"
+              />
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="pt-[68px] pb-[68px]">
+        <div
+          class="max-w-[1150px] ml-auto mr-auto flex gap-[20px] items-center justify-between"
+        >
+          <img
+            class="w-[445px] h-[445px]"
+            src="./images/woman.png"
+            alt="woman"
+            width="445px"
+            height="445px"
+          />
+          <div class="max-w-[540px]">
+            <h2 class="text-[var(--black)] text-[40px] mb-[34px]">
+              I’m Amy, and I’d love to work on your next project
+            </h2>
+            <p class="mb-[32px]">
+              I love working with others to create beautiful design solutions.
+              I’ve designed everything from brand illustrations to complete
+              mobile apps. I’m also handy with a camera!
+            </p>
+            <a
+              class="transition duration-500 pt-[14px] pb-[14px] pl-[45px] pr-[45px] rounded-[28px] inline-block bg-[var(--red)] font-bold text-[var(--white)] hover:bg-[var(--orange)]"
+              href="#"
+              >Free Consultation</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- call to action -->
+      <section class="bg-[var(--black)] max-w-[1150px] mr-auto ml-auto flex items-center pl-[65px] pt-[81px] pb-[80px] pr-[95px] justify-between">
+        <div class="max-w-[540px] text-[var(--white)]">
+          <h2 class="mb-[25px] text-[40px] font-bold">Book a call with me</h2>
+          <p class="leading-[28px]">
+            I’d love to have a chat to see how I can help you. The best first
+            step is for us to discuss your project during a free consultation.
+            Then we can move forward from there.
+          </p>
+        </div>
+        <a class="transition duration-500 pt-[14px] pb-[14px] pl-[45px] pr-[45px] rounded-[28px] inline-block bg-[var(--red)] font-bold text-[var(--white)] hover:bg-[var(--orange)]" href="#">Free Consultation</a>
+      </section>
+    </main>
+  </body>
+</html>
